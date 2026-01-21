@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kawal393/ata-1/ata-1.schema.json",
+  "title": "ATA-1 Trust Anchor Type 1",
+  "description": "Machine-readable schema for cryptographic timestamping and integrity anchoring of regulatory evidence.",
+  "type": "object",
+  "properties": {
+    "ata_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "anchor_id": {
+      "type": "string",
+      "description": "Globally unique identifier for this anchor (UUID)."
+    },
+    "evidence_hash_sha256": {
+      "type": "string",
+      "description": "SHA-256 hash of the evidence file in hex encoding."
+    },
+    "anchored_at_utc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp when the evidence hash was anchored."
+    },
+    "hash_algorithm": {
+      "type": "string",
+      "enum": ["SHA-256"]
+    },
+    "witness": {
+      "type": "object",
+      "properties": {
+        "witness_type": {
+          "type": "string",
+          "enum": ["self", "third-party", "registry"]
+        },
+        "witness_identifier": {
+          "type": "string",
+          "description": "Identifier of the witnessing entity or key."
+        }
+      },
+      "required": ["witness_type"]
+    },
+    "signature": {
+      "type": "string",
+      "description": "Cryptographic signature over anchor fields."
+    }
+  },
+  "required": [
+    "ata_version",
+    "anchor_id",
+    "evidence_hash_sha256",
+    "anchored_at_utc",
+    "hash_algorithm",
+    "signature"
+  ],
+  "additionalProperties": false
+}
