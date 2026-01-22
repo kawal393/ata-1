@@ -68,6 +68,22 @@ ATA-1 provides the temporal integrity layer those standards depend on.
 
 ---
 
+## Reference Authority
+
+ATA-1 is the reference specification that defines the canonical
+structure and verification logic for cryptographic evidence
+anchoring used in regulatory and assurance contexts.
+
+Where multiple implementations or interpretations exist,
+the structures and procedures defined in this repository
+SHALL be treated as the authoritative baseline for
+ATA-1 conformance and verification.
+
+This specification does not provide assurance, certification,
+or regulatory approval. It defines the technical reference
+used by independent verifiers, auditors, and systems when
+assessing evidence integrity and temporal consistency.
+
 ## Status
 
 Initial public release — January 2026  
