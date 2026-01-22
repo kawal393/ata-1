@@ -84,6 +84,13 @@ or regulatory approval. It defines the technical reference
 used by independent verifiers, auditors, and systems when
 assessing evidence integrity and temporal consistency.
 
+## Referenced Specifications
+
+ATA-1 is designed to support temporal integrity and audit-readiness
+for higher-level disclosure and compliance standards, including:
+
+- OMPC-1 (Open Model Provenance Core)
+
 ## Status
 
 Initial public release — January 2026  
