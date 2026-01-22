@@ -1,11 +1,12 @@
 # ATA-1 Verifier
 
-The ATA-1 Verifier defines the reference process used to validate
+The ATA-1 Verifier defines the canonical verification logic for evaluating
 ATA-1 Trust Anchor records.
 
-This repository does not provide a hosted verification service.
-It defines the minimum verification steps required for independent
-confirmation of an ATA-1 anchor.
+Any system, auditor, registry, or tool claiming to verify ATA-1–anchored
+evidence MUST implement the procedures defined in this repository
+or produce functionally equivalent results.
+
 
 ---
 
